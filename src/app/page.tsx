@@ -29,7 +29,7 @@ export default async function Home() {
   return (
     <main>
       <div className="md:grid md:grid-cols-3 md:gap-8 flex flex-col justify-between m-6 gap-8 ">
-        {recipes.map((recipe) => {
+        {recipes.map((recipe: Recipe) => {
           return (
             <Card
               key={recipe._id}
