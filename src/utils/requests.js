@@ -8,7 +8,7 @@ async function getRecipes() {
       return [];
     }
 
-    const res = await fetch(`${apiDomain}/recipe`);
+    const res = await fetch(`${apiDomain}/recipes`);
 
     //delay response
     //await new Promise((resolve) => setTimeout(resolve, 1000));
