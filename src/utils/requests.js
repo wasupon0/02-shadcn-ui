@@ -11,7 +11,7 @@ async function getRecipes() {
     const res = await fetch(`${apiDomain}/recipe`);
 
     //delay response
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    //await new Promise((resolve) => setTimeout(resolve, 1000));
 
     if (!res.ok) {
       throw new Error("Failed to fetch data");
