@@ -12,6 +12,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+import { getRecipes } from "@/utils/requests";
+
 interface Recipe {
   title: string;
   image: string;
@@ -19,23 +21,6 @@ interface Recipe {
   description: string;
   vegan: boolean;
   _id: string;
-}
-
-async function getRecipes(): Promise<Recipe[]> {
-  try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/recipe`);
-
-    //delay response
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    if (!res.ok) {
-      throw new Error("Failed to fetch data");
-    }
-
-    return res.json();
-  } catch (error) {
-    console.log(error);
-  }
 }
 
 export default async function Home() {
