@@ -1,0 +1,14 @@
+{
+  "name": "Add to Cart",
+  "short_name": "Add to Cart",
+  "icons": [
+    {
+      "src": "/cook-book.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#1c1b24",
+  "background_color": "#1c1b24",
+  "display": "standalone"
+}
