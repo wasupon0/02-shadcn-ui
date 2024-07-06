@@ -20,7 +20,7 @@ export default function RootLayout({
         className={`${inter.className} bg-gradient-to-r from-slate-900 to-indigo-900`}
       >
         <nav>
-          <h1 className="text-white m-8">Recipes and Vegan Foods Chad</h1>
+          <h1 className="text-white m-8">Recipes and Vegan Foods Shad new</h1>
         </nav>
         {children}
       </body>
